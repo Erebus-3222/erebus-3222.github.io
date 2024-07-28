@@ -6,5 +6,6 @@ nav_order: 2
 ---
 
 # Mexico Train Tunnel
-{: .note } You can buy this asset here [Asset Page](https://erebus-scripts.tebex.io/package/6381818).
+{: .note } 
+You can buy this asset here [Asset Page](https://erebus-scripts.tebex.io/package/6381818).
 
