@@ -22,7 +22,7 @@ If you need help please follow the instructions below.
 
 ## Installation
 
-
+[Link to another page]({{site.baseurl}}/)
 
 ## Configuration
 
