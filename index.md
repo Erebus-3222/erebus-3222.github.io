@@ -9,3 +9,5 @@ nav_order: 1
 
 Welcome to Erebus Scripts Documentation.
 {: .fs-6 .fw-300 }
+
+![CUSTOM SERVICES](/assets/images/customservice.png)
