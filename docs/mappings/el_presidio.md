@@ -7,4 +7,6 @@ nav_order: 1
 
 # El Presidio
 
-[Asset Page](https://erebus-scripts.tebex.io/package/6377749)
+[Buy Now!](https://erebus-scripts.tebex.io/package/6377749)
+
+![Presidio](/assets/images/elpresidio.png)
