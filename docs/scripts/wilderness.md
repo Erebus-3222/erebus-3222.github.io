@@ -24,6 +24,7 @@ If you need help please follow the instructions below.
 - [ ] Download and unzip the script
 - [ ] Ensure the script in your server.cfg
 - [ ] Configure the script
+- [ ] All items must be in the database! IMPORTANT!
 - [ ] Restart server
 
 
