@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Buttons
-parent: UI Components
+title: Mexico Train Tunnel
+parent: MLO/YMAPS
 nav_order: 2
 ---
 
-# Buttons
+# Mexico Train Tunnel
 {: .no_toc }
 
 ## Table of contents

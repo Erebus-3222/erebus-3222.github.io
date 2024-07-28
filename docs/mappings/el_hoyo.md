@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Lists
-parent: UI Components
+title: El Hoyo
+parent: MLO/YMAPS
 nav_order: 5
 ---
 
-# Lists
+# El Hoyo
 {: .no_toc }
 
 ## Table of contents

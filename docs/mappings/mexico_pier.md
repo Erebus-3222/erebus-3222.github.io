@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Tables
-parent: UI Components
+title: Mexico Pier
+parent: MLO/YMAPS
 nav_order: 4
 ---
 
-# Tables
+# Mexico Pier
 
 Tables are responsive by default, allowing wide tables to have a horizontal scroll to access columns outside of the normal viewport.
 

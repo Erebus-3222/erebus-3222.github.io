@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Typography
-parent: UI Components
+title: El Presidio
+parent: MLO/YMAPS
 nav_order: 1
 ---
 
-# Typography
+# El Presidio
 {: .no_toc }
 
 ## Table of contents
