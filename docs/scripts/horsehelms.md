@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Color
-parent: Utilities
+title: Horse Helms
+parent: Scripts
 ---
 
-# Color Utilities
+# Horse Helms
 {: .no_toc }
 
 ## Table of contents
