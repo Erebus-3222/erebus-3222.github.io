@@ -5,8 +5,8 @@ parent: MLO/YMAPS/PROPS
 nav_order: 2
 
 ---
-[Asset Page](https://erebus-scripts.tebex.io/package/6381818)
+
 # Mexico Train Tunnel
 {: .note } 
-You can buy this asset here [Asset Page].
+[Get it FREE!](https://erebus-scripts.tebex.io/package/6381818)
 ![Mexico Train Tunnel](/assets/images/tunnel.png)
