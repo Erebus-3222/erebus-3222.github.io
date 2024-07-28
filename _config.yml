@@ -6,3 +6,8 @@ url: https://erebus-3222.github.io/erebus-3222.github.io
 
 aux_links: # remove if you don't want this link to appear on your pages
   Template Repository: https://github.com/erebus-3222/erebus-3222.github.io
+
+
+  # Enable or disable the site search
+# Supports true (default) or false
+search_enabled: true
