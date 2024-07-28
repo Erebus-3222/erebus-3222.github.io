@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Configuration
+title: Home
 nav_order: 2
 ---
 
@@ -24,7 +24,7 @@ View this site's [\_config.yml](https://github.com/just-the-docs/just-the-docs/t
 
 ```yaml
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/just-the-docs.png"
+logo: "/assets/images/Untitled2.png"
 ```
 
 ## Site favicon
