@@ -7,4 +7,4 @@ nav_order: 1
 
 # El Presidio
 
-[Asset Page](https://google.com/)
+[Asset Page](https://erebus-scripts.tebex.io/package/6377749)
