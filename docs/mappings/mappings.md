@@ -1,12 +1,12 @@
 ---
 layout: default
-title: MLO/YMAPS
+title: MLO/YMAPS/PROPS
 nav_order: 3
 has_children: true
 permalink: /docs/mappings
 ---
 
-# UI Components
+# Mappings MLO/YMAPS/PROPS
 
 Below is a list of our current mappings.
 {: .fs-6 .fw-300 }
