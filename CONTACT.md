@@ -8,5 +8,5 @@ layout: default
 Summary:
     You can contact us via:
 
-    - Discord
-    - Website
+    - [Discord](https://discord.gg/pugmjxBKR8)
+    - [Website](https://erebus-scripts.tebex.io)
