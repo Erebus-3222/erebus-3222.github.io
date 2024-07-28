@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Cattle Drive
+title: Wilderness
 parent: Scripts
 ---
 
-# Cattle Drive
+# Wilderness
 {: .no_toc }
 
 ## Table of contents
