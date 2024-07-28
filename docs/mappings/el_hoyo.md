@@ -1,7 +1,7 @@
 ---
 layout: default
 title: El Hoyo
-parent: MLO/YMAPS
+parent: MLO/YMAPS/PROPS
 nav_order: 5
 ---
 

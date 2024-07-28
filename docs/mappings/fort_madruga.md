@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Fort Madruga
-parent: MLO/YMAPS
+parent: MLO/YMAPS/PROPS
 nav_order: 3
 ---
 
