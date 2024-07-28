@@ -1,14 +1,13 @@
 ---
 layout: default
-title: Home
-logo: "/assets/images/Untitled2.png"
+title: Configuration
 nav_order: 2
 ---
 
-# Home
+# Configuration
 {: .no_toc }
 
-Welcome to Erebus Scripts Documentation.
+Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's \_config.yml file.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -25,7 +24,7 @@ View this site's [\_config.yml](https://github.com/just-the-docs/just-the-docs/t
 
 ```yaml
 # Set a path/url to a logo that will be displayed instead of the title
-
+logo: "/assets/images/just-the-docs.png"
 ```
 
 ## Site favicon
