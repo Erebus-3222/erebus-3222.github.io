@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Erebus Hogties
+title: Erebus Image Uploader
 parent: Scripts
 ---
 
@@ -52,14 +52,15 @@ If the upload was successful, you'll see a preview of the image and a confirmati
 
 
 
-🚨 Important Notes
+## Important Notes
 Only .png images are accepted.
 Do not change the resource name, as this will break the functionality of the script.
-Example Upload Process
-Prepare a 96x96 .png image.
-Post the image in a private Discord channel and copy the link.
-Run the /uploadimage command in-game.
-Paste the Discord image URL in the top field and the item spawn name in the bottom field.
-Click Upload. If successful, your image will display along with a confirmation message.
+1. Example Upload Process
+2. Prepare a 96x96 .png image.
+3. Post the image in a private Discord channel and copy the link.
+4. Run the /uploadimage command in-game.
+5. Paste the Discord image URL in the top field and the item spawn name in the bottom field.
+6. Click Upload. If successful, your image will display along with a confirmation message.
+
 By using this tool, you can easily add custom images for your in-game items with just a few simple steps.
 
