@@ -26,15 +26,13 @@ If you need help please follow the instructions below.
 - [ ] Configure the script
 - [ ] Restart server OR Start script
 
-## COMMAND
-- /uploadimage
-
-
-## How to use
+## 📖 Commands Overview
+- /uploadimage: Opens the UI to upload a new image for items.
 
 
 
-📋 How to Upload an Image
+## 📋 How to Upload an Image
+
 1. Prepare Your Image
 Ensure your image has:
 A transparent background
