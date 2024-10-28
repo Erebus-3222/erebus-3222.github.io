@@ -26,8 +26,12 @@ If you need help please follow the instructions below.
 - [ ] Configure the script
 - [ ] Restart server OR Start script
 
+## COMMAND
+- /uploadimage
+
 
 ## How to use
+
 
 
 📋 How to Upload an Image
