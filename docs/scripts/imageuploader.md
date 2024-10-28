@@ -4,7 +4,7 @@ title: Erebus Image Uploader
 parent: Scripts
 ---
 
-# Erebus Hogties
+# Erebus Image Uploader
 {: .no_toc }
 
 ## Table of contents
