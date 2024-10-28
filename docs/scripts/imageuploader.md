@@ -24,6 +24,7 @@ If you need help please follow the instructions below.
 - [ ] Download and unzip the script
 - [ ] Ensure the script in your server.cfg
 - [ ] Configure the script
+- [ ] Set your filepath in the config.lua
 - [ ] Restart server OR Start script
 
 ## 📖 Commands Overview
