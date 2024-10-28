@@ -66,3 +66,5 @@ Do not change the resource name, as this will break the functionality of the scr
 
 By using this tool, you can easily add custom images for your in-game items with just a few simple steps.
 
+##  ⚠️ Permissions and Restrictions
+Only authorized users, as defined in the server configuration (Config.Developers), can use the /additem2db and /uploadimage commands. Ensure you have the correct permissions to avoid access errors.
