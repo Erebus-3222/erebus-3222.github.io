@@ -99,7 +99,7 @@ Config.CraftingStations["Valentine"] = {
 
 ## 🔁 Exports
 
-See [Gang Exports](./gang-exports.html) for full integration documentation.
+See [Gang Exports](./gangs-exports.html) for full integration documentation.
 
 
 ---
