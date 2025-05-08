@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Erebus Image Uploader
+nav_order: 6
 ---
 
 # Erebus Image Uploader

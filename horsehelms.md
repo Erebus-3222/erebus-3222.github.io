@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Horse Helms
+nav_order: 7
 ---
 
 # Horse Helms

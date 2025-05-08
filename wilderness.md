@@ -1,6 +1,8 @@
 ---
 layout: default
 title: Wilderness
+nav_order: 3
+
 ---
 
 # Wilderness

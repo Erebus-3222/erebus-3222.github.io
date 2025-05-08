@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Erebus Item Admin
+nav_order: 5
 ---
 
 # Erebus Item Admin
