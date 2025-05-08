@@ -2,6 +2,7 @@
 layout: default
 title: Cattle Drive
 parent: Scripts
+nav_order: 3
 ---
 
 # Cattle Drive
