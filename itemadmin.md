@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Erebus Item Admin
-parent: Scripts
 ---
 
 # Erebus Item Admin

@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Horse Helms
-parent: Scripts
 ---
 
 # Horse Helms

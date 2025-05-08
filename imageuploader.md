@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Erebus Image Uploader
-parent: Scripts
 ---
 
 # Erebus Image Uploader

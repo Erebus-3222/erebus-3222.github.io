@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Wilderness
-parent: Scripts
 ---
 
 # Wilderness

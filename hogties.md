@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Erebus Hogties
-parent: Scripts
 nav_order: 4
 ---
 
