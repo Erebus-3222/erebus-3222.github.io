@@ -3,8 +3,6 @@ layout: default
 title: Gangs
 parent: Scripts
 has_children: true
-nav_order: 4
-permalink: docs/scripts/gangs
 ---
 
 # 🏴 EM Studios Gangs

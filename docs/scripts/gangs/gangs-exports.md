@@ -2,8 +2,7 @@
 layout: default
 title: Gang Exports
 parent: Gangs
-nav_order: 5
-permalink: docs/scripts/gangs/gang-exports
+nav_order: 2
 ---
 
 
