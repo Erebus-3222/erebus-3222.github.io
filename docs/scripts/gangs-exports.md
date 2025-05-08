@@ -1,8 +1,9 @@
 ---
 layout: default
 title: Gang Exports
-parent: gangs
+parent: EM Studios Gangs
 ---
+
 
 # 📘 EM_Studios_Gangs Exports
 {: .no_toc }

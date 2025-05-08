@@ -2,6 +2,8 @@
 layout: default
 title: EM Studios Gangs
 parent: Scripts
+has_children: true
+nav_order: 4
 ---
 
 # 🏴 EM Studios Gangs
@@ -97,17 +99,8 @@ Config.CraftingStations["Valentine"] = {
 
 ## 🔁 Exports
 
-See [Gang Exports](/scripts/gang-exports) for full integration documentation.
+See [Gang Exports](./gang-exports.md) for full integration documentation.
 
-Example:
-
-```lua
-exports["EM_Studios_Gangs"]:AddPlayerGangInfamy(source, "Valentine", 50):next(function(success)
-    if success then
-        print("Infamy added!")
-    end
-end)
-```
 
 ---
 
