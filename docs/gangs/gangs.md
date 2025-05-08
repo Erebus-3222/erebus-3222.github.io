@@ -1,7 +1,6 @@
 ---
 layout: default
 title: Gangs
-parent: Scripts
 has_children: true
 nav_order: 2
 
