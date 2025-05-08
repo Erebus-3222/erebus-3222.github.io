@@ -2,9 +2,10 @@
 layout: default
 title: Gang Exports
 parent: Gangs
-permalink: docs/scripts/gang-exports
-
+nav_order: 2
+permalink: docs/scripts/gangs/gang-exports
 ---
+
 
 
 # 📘 EM_Studios_Gangs Exports
