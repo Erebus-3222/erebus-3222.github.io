@@ -2,6 +2,8 @@
 layout: default
 title: Gang Exports
 parent: Gangs
+permalink: docs/scripts/gang-exports
+
 ---
 
 
