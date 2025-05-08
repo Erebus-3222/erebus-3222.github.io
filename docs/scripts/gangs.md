@@ -1,13 +1,17 @@
 ---
 layout: default
-title: Gang Exports
+title: EM Studios Gangs
 parent: Scripts
 ---
 
-# 📘 EM_Studios_Gangs Exports
+# 🏴 EM Studios Gangs
 {: .no_toc }
 
-## Table of contents
+A modular and immersive gang territory system for RedM built for VORP. Includes infamy, territory control, tax banking, crafting, and promotion systems.
+
+---
+
+## 📑 Table of Contents
 {: .no_toc .text-delta }
 
 1. TOC
@@ -15,215 +19,115 @@ parent: Scripts
 
 ---
 
-These exports allow your other RedM scripts to interact with the gang system – including gang infamy, zone control, and tax earnings.
+## 🔧 Requirements
+
+- [VORP Core](https://github.com/VORPCORE/vorp_core-lua)
+- MySQL (via ghmattimysql or oxmysql)
+- RedM (FXServer)
 
 ---
 
-## Requirements
+## 📦 Installation
 
-- [ ] [VORP](https://github.com/VORPCORE/vorp_core-lua)
+1. Download and unzip this resource into your server's `resources` folder.
+2. Add it to your `server.cfg`:
 
----
-
-## Notes
-
-🛈 Some exports use `:next(function(result) ... end)` — this means they return a **promise**. You must handle the response using the callback pattern shown in the examples.
-
-🛈 `zoneName` can be a **string** (e.g. `"Valentine"`) or a **zone hash** (e.g. `459833523`) — both are supported.
-
----
-
-### ✅ `AddGangInfamy`
-
-Use this when a gang gains influence by action (e.g., mission success). Rivals in the same zone lose infamy.
-
-```lua
-exports["EM_Studios_Gangs"]:AddGangInfamy(charId, zoneName, amount)
+```cfg
+ensure EM_Studios_Gangs
 ```
 
-**Arguments:**
-- `charId` *(number)* — Character ID (from `getUsedCharacter.charIdentifier`)
-- `zoneName` *(string or number)* — Zone name or zone hash
-- `amount` *(number)* — Infamy amount to add (max 1000)
-
-**Notes:**
-- Rival gangs **lose the same amount** of infamy.
-- Caps at 1000 infamy.
-
-<details>
-<summary>Example</summary>
-
-```lua
-exports["EM_Studios_Gangs"]:AddGangInfamy(12345, "Valentine", 50)
-```
-</details>
+3. Import the provided SQL files (`gangs`, `gang_members`, `gang_infamy`, `zone_balances`).
+4. Configure your zones and crafting stations in `config.lua`.
+5. (Optional) Set up Discord webhooks and role synchronization.
 
 ---
 
-### ✅ `AddPlayerGangInfamy`
+## ⚙️ Configuration
 
-Adds infamy to the gang of a given player without affecting rivals.
+You can configure nearly every aspect of this script using `config.lua`.
+
+### 🔐 Gang Creation
 
 ```lua
-exports["EM_Studios_Gangs"]:AddPlayerGangInfamy(source, zoneName, amount):next(function(success) ... end)
+Config.UseGangPermit = true         -- Require item to create a gang
+Config.GangPermitItem = "gang_permit"
+Config.PermitAmount = 1
 ```
 
-**Arguments:**
-- `source` *(number)* — Player’s server ID
-- `zoneName` *(string or number)* — Zone name or hash
-- `amount` *(number)* — Infamy to add
-
-**Returns:** `true` or `false`
-
-<details>
-<summary>Example</summary>
+### 🧾 Infamy Settings
 
 ```lua
-exports["EM_Studios_Gangs"]:AddPlayerGangInfamy(source, "Rhodes", 25):next(function(success)
+Config.InfamyPerTick = 10                  -- Passive infamy gain from KOTH
+Config.InfamyLossPerKill = 5              -- Infamy loss when peds are killed
+Config.ReduceInfamyOnKill = true
+Config.AllowNonGangInfamyLoss = false
+```
+
+### 🗺️ Zone Mapping
+
+```lua
+Config.ZoneHashToName = {
+    [459833523] = "Valentine",
+    [2046780049] = "Rhodes",
+    ...
+}
+```
+
+### 🛠️ Crafting & Purchasables
+
+Define recipes and purchasables per zone in the `Config.CraftingStations` table.
+
+```lua
+Config.CraftingStations["Valentine"] = {
+  recipes = {
+    {
+      label = "Molotov",
+      ingredients = {
+        { item = "alcohol", count = 1 },
+        { item = "cloth", count = 1 }
+      },
+      reward = { item = "molotov", count = 1, label = "Molotov Cocktail" },
+      craftTime = 3000
+    }
+  }
+}
+```
+
+---
+
+## 🔁 Exports
+
+See [Gang Exports](/scripts/gang-exports) for full integration documentation.
+
+Example:
+
+```lua
+exports["EM_Studios_Gangs"]:AddPlayerGangInfamy(source, "Valentine", 50):next(function(success)
     if success then
-        print("Infamy granted!")
+        print("Infamy added!")
     end
 end)
 ```
-</details>
 
 ---
 
-### ✅ `SubtractPlayerGangInfamy`
+## 🖼️ UI Showcase
 
-Subtracts infamy from the player’s gang in a specific zone.
-
-```lua
-exports["EM_Studios_Gangs"]:SubtractPlayerGangInfamy(source, zoneName, amount):next(function(success) ... end)
-```
-
-**Arguments:**
-- `source` *(number)* — Player’s server ID
-- `zoneName` *(string or number)* — Zone name or hash
-- `amount` *(number)* — Infamy to subtract
-
-**Returns:** `true` or `false`
+- ✅ EM Studios-style dark NUI
+- ✅ Gang list, invites, and ranks
+- ✅ Infamy values and zone control indicators
+- ✅ Dynamic crafting and territory earnings
 
 ---
 
-### ✅ `IsPlayerInGang`
+## 📬 Support
 
-Checks whether a player is currently in any gang.
-
-```lua
-exports["EM_Studios_Gangs"]:IsPlayerInGang(source):next(function(isInGang) ... end)
-```
-
-**Arguments:**
-- `source` *(number)* — Player’s server ID
-
-**Returns:** `true` or `false`
+Join our Discord for support, bug reports, or suggestions:  
+[https://discord.gg/pugmjxBKR8](https://discord.gg/pugmjxBKR8)
 
 ---
 
-### ✅ `DoesGangControlZone`
+## 📄 License
 
-Checks if a gang **controls** a zone (requires 500+ infamy and no other gang with same score).
+MIT License — see `LICENSE` file for details.
 
-```lua
-exports["EM_Studios_Gangs"]:DoesGangControlZone(gangName, zoneName):next(function(result) ... end)
-```
-
-**Arguments:**
-- `gangName` *(string)* — Name of the gang
-- `zoneName` *(string or number)* — Zone name or hash
-
-**Returns:** `true` or `false`
-
----
-
-### ✅ `GetPlayerGangZoneControlLevel`
-
-Returns how much control the player's gang has over a zone.
-
-```lua
-exports["EM_Studios_Gangs"]:GetPlayerGangZoneControlLevel(source, zoneName):next(function(level) ... end)
-```
-
-**Arguments:**
-- `source` *(number)* — Player’s server ID
-- `zoneName` *(string or number)* — Zone name or hash
-
-**Returns:**
-- `"none"` — Player’s gang has no control
-- `"partial"` — 500+ infamy but under 1000
-- `"full"` — 1000 infamy (full control)
-
----
-
-### ✅ `WithdrawZoneBalance`
-
-Lets a gang owner claim the tax balance from a controlled territory.
-
-```lua
-exports["EM_Studios_Gangs"]:WithdrawZoneBalance(source, zoneName):next(function(success) ... end)
-```
-
-**Arguments:**
-- `source` *(number)* — Player’s server ID
-- `zoneName` *(string or number)* — Zone name or hash
-
-**Returns:** `true` or `false`
-
-**Requirements:**
-- Player must be **gang owner**
-- Their gang must control the zone
-
----
-
-### ✅ `PayTaxToControllingGang`
-
-Deposits tax earnings into the gang bank of the **controlling gang** in a zone.
-
-```lua
-exports["EM_Studios_Gangs"]:PayTaxToControllingGang(zoneName, amount, source):next(function(success) ... end)
-```
-
-**Arguments:**
-- `zoneName` *(string or number)* — Zone name or hash
-- `amount` *(number)* — Amount to deposit
-- `source` *(number, optional)* — Server ID of the player paying the tax
-
-**Returns:** `true` or `false`
-
-**Notes:**
-- Only works if a gang controls the zone (500+ infamy and no tie)
-- Sends right-tip notification if `source` is provided
-
----
-
-### ✅ `GetGangByCharId`
-
-Fetches a character's gang name using their ID.
-
-```lua
-exports["EM_Studios_Gangs"]:GetGangByCharId(charId, function(gangName) ... end)
-```
-
-**Arguments:**
-- `charId` *(number)* — Character ID (from `getUsedCharacter.charIdentifier`)
-- `function(gangName)` — Callback receives the gang name (or `nil` if none)
-
----
-
-## ✅ Valid Zones
-
-You can use these zone names (or their hashes) with any export:
-
-- `"Valentine"`
-- `"Rhodes"`
-- `"Saint Denis"`
-- `"Blackwater"`
-- `"Tumbleweed"`
-- `"Strawberry"`
-- `"Annesburg"`
-- `"Van Horn"`
-- `"Armadillo"`
-- `"Lagras"`
-
----
