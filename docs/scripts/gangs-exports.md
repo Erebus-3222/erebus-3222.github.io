@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Gang Exports
-parent: EM Studios Gangs
+parent: gangs
 ---
 
 

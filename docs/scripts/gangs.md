@@ -1,6 +1,6 @@
 ---
 layout: default
-title: EM Studios Gangs
+title: Gangs
 parent: Scripts
 has_children: true
 nav_order: 4
